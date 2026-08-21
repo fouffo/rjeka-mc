@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Text, useWindowSize, useInput, Box} from 'ink';
 import KeybindsPopup from './popups/keybinds.js';
+import HomeScreen from './views/home.js';
 
 type Props = {};
 
@@ -39,7 +40,7 @@ export default function App({}: Props) {
 					position="relative"
 				>
 					{/* window content goes in this box */}
-					<Box width="100%" height="100%" borderStyle="round" borderColor="#F00"></Box>
+					<HomeScreen />
 					<KeybindsPopup visible={keybindsVisibility} />
 				</Box>
 				<Box width="100%" justifyContent="space-around">

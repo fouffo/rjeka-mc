@@ -6,9 +6,9 @@ type Props = {
 };
 
 const binds = [
-	// although this is pretty easy to edit there should be a way to make it connected to the actual keybinds
-	{action: 'Ctrl + Spacebar', description: 'Show keybinds'},
+	{action: 'Ctrl + K', description: 'Show keybinds'},
 	{action: 'Esc', description: 'Pop dialog / go back'},
+	{action: 'Tab', description: 'Change focus'},
 	{action: 'Ctrl + C', description: 'Quit'},
 ];
 
