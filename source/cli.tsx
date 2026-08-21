@@ -16,9 +16,12 @@ const cli = meow(
 `,
 	{
 		importMeta: import.meta,
-		flags: {
-		},
+		flags: {},
 	},
 );
 
-render(<App />);
+const {waitUntilExit} = render(<App />);
+
+await waitUntilExit();
+
+console.clear();
